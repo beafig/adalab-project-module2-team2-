@@ -1,0 +1,76 @@
+.share {
+  &__title {
+    margin-top: 10px;
+    font: $openSans_18;
+    color: $gunmetal;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__header {
+    width: 100%;
+    cursor: pointer;
+  }
+  &__container--one {
+    display: flex;
+    justify-content: center;
+    border-bottom: solid 1px $white-three;
+    margin: 30px 0 20px;
+  }
+  &__button--create {
+    width: 200px;
+    height: 50px;
+    background-color: $dull-orange;
+    border-radius: 12px;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+    border: none;
+    color: $white-two;
+    font: $openSans_18;
+    margin-bottom: 30px;
+    cursor: pointer;
+  }
+  &__container--two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: solid 1px $white-three;
+  }
+  &__text {
+    font: $openSans_18;
+    color: $gunmetal;
+  }
+  &__button--twitter {
+    background-color: $azure;
+    color: $white-two;
+    font: $openSans_14;
+    height: 30px;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+    margin: 35px 0 30px 0;
+    padding: 5px 10px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  &__link {
+    font: $openSans_12_400;
+    color: $dull-orange;
+    margin-top: 5px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  &__msg {
+    font: $openSans_12_400;
+    color: $black;
+    margin-bottom: 35px;
+    font-weight: 600;
+  }
+}
+.opacity {
+  opacity: 60%;
+}
+.fa-address-card {
+  margin-right: 7px;
+}
+.fa-twitter {
+  margin-right: 10px;
+}

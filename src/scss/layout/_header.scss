@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  justify-content: center;
+  background-color: $white-four;
+}
+.logo-awesome-profile-cards {
+  width: 450px;
+  height: 225px;
+  cursor: pointer;
+}
+
+@media all and (min-width: 768px) {
+  .logo-awesome-profile-cards {
+    width: 300px;
+    height: 150px;
+  }
+}

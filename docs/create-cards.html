@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Awesome profile cards</title>
+
+    <script
+      src="https://kit.fontawesome.com/8841dc85f6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./assets/images/card.png" />
+
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+
+  <body>
+    <header class="header_2">
+      <a href="http://beta.adalab.es/project-promo-s-module-2-team-2/">
+        <img
+          class="logo-awesome-profile-cards_2"
+          src="./assets/images/logo2.png"
+          alt="logo awesome profile cards"
+          title="logo awesome profile cards"
+        />
+      </a>
+    </header>
+
+    <main class="create__main">
+      <section class="background js-background">
+        
+        <button type="reset" class="reset__button js-btnreset"
+       title="Resets content">
+            <i class="fa-regular fa-trash-can"></i>
+            Reset
+        </button>
+        
+        <article class="card">
+          <div class="card__info js-info">
+            <h2 class="card__info--title js-preview-name">Nombre Apellido</h2>
+            <h3 class="card__info--subtitle js-preview-job">Front-end Developer</h3>
+          </div>
+
+          <div class="card__image js__profile-image" title="customer's photo"></div>
+
+          <nav class="socials js-socials">
+            <a
+              href=""
+              class="socials__mobile socials__disabled js-preview-number"
+              target="_blank"
+              title="Phone Number"
+            >
+              <i class="fa-solid fa-mobile-screen"></i>
+            </a>
+
+            <a
+              href=""
+              class="socials__mail socials__disabled js-preview-email"
+              target="_blank"
+              title="Email Address"
+            >
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+
+            <a
+              href=""
+              class="socials__linkedin socials__disabled js-preview-linkedin"
+              target="_blank"
+              title="LinkedIn Profile"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a
+              href=""
+              class="socials__github socials__disabled js-preview-github"
+              target="_blank"
+              title="Github Profile"
+            >
+              <i class="fa-brands fa-github-alt"></i>
+            </a>
+          </nav>
+        </article>
+      </section>
+
+
+      <section class="section__form">
+        <form class="form js-form" action="#" method="post">
+          <fieldset class="design">
+            <legend class="design__header js-design-legend" title="Despliega el menú">
+              <h3 class="design__title">
+                <div class="container__title">
+                  <i class="fa-regular fa-object-ungroup"></i>
+                  DISEÑA
+                </div>
+                <div class="container__angle">
+                  <i class="fa-solid fa-angle-down js-down1 collapsable"></i>
+                  <i class="fa-solid fa-angle-up js-up1"></i>
+                </div>
+              </h3>
+            </legend>
+
+            <div class="design__container js-design">
+              <label class="design__label" for="colors">COLORES </label>
+              <div class="design__container--colors1">
+                <input
+                  class="design__input js-input js-input-colors js-palette1"
+                  id="palette"
+                  value="1"
+                  type="radio"
+                  name="colors"
+                  checked
+                />
+                <div class="colors--one"></div>
+                <div class="colors--two"></div>
+                <div class="colors--three"></div>
+              </div>
+
+              <div class="design__container--colors2">
+                <input
+                  class="design__input js-input js-input-colors js-palette2"
+                  id="palette"
+                  value="2"
+                  type="radio"
+                  name="colors"
+                />
+                <div class="colors--four"></div>
+                <div class="colors--five"></div>
+                <div class="colors--six"></div>
+              </div>
+
+              <div class="design__container--colors3">
+                <input
+                  class="design__input js-input js-input-colors js-palette3"
+                  id="palette"
+                  value="3"
+                  type="radio"
+                  name="colors"
+                />
+
+                <div class="colors--seven"></div>
+                <div class="colors--eight"></div>
+                <div class="colors--nine"></div>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="fill">
+            <legend class="fill__header js-fill-legend" title="Despliega el menú">
+              <h3 class="fill__title">
+                <div class="container__title">
+                  <i class="fa-regular fa-keyboard"></i>
+                  RELLENA
+                </div>
+                <div class="container__angle">
+                  <i class="fa-solid fa-angle-down js-down2"></i>
+                  <i class="fa-solid fa-angle-up js-up2 collapsable"></i>
+                </div>
+              </h3>
+            </legend>
+            <div class="js-fill collapsable">
+              <label class="fill__label" for="name">Nombre completo</label>
+              <input
+                class="fill__input js-input js-input-name js-inputFill"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Ej: Pepino Conde Furfur"
+                required
+              />
+              <label class="fill__label" for="job">Puesto </label>
+              <input
+                class="fill__input js-input js-input-job js-inputFill"
+                type="text"
+                id="job"
+                name="job"
+                placeholder="Ej: Mascota Adalab"
+                required
+              />
+              <label class="fill__label" for="photo">Imagen de perfil</label>
+              <div class="fill__label--container">
+                <label for="photo" class="fill__label--button">Añadir imagen</label>
+                <input
+                  type="file"
+                  id="photo"
+                  class="collapsable js__profile-upload-btn"
+                />
+                <div class="fill__label--box js__profile-preview"></div>
+              </div>
+              <label class="fill__label" for="email">Email</label>
+              <input
+                class="fill__input js-input js-input-email js-inputFill"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Ej: pepino_conde@furfur.com"
+                required
+              />
+              <label class="fill__label" for="phone">Teléfono</label>
+              <input
+                class="fill__input js-input js-input-number js-inputFill"
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Ej: +34666543210"
+              />
+              <label class="fill__label" for="linkedin">Linkedin</label>
+              <input
+                class="fill__input js-input js-input-linkedin js-inputFill"
+                type="text"
+                id="linkedin"
+                name="linkedin"
+                placeholder="Ej:pepino.furfur"
+              />
+              <label class="fill__label" for="github">Github</label>
+              <input
+                class="fill__input fill__input--last js-input js-input-github js-inputFill"
+                type="text"
+                id="github"
+                name="github"
+                placeholder="Ej: pepinofurfur"
+              />
+            </div>
+          </fieldset>
+        </form>
+        <fieldset class="share">
+          <legend class="share__header js-share-legend" title="Despliega el menú">
+            <h3 class="share__title">
+              <div class="container__title">
+                <i class="fa-solid fa-share-nodes"></i>
+                COMPARTE
+              </div>
+              <div class="container__angle">
+                <i class="fa-solid fa-angle-down js-down3"></i>
+                <i class="fa-solid fa-angle-up js-up3 collapsable"></i>
+              </div>
+            </h3>
+          </legend>
+        </fieldset>
+        <div class="js-share collapsable">
+          <div class="share__container--one">
+            <button class="share__button--create js-create-btn opacity">
+              <i class="fa-regular fa-address-card"></i>
+              CREAR TARJETA
+            </button>
+          </div>
+          <div class="share__container--two">
+            <p class="share__text js-createCard collapsable">
+              La tarjeta ha sido creada:
+            </p>
+            <a
+              href=""
+              class="share__link js-linkCard share__link"
+              target="_blank"
+            ></a>
+            <p class="js-error share__msg collapsable"></p>
+            <a
+              class="share__button--twitter js-twitterBtn collapsable"
+              href=""
+              target="_blank"
+            >
+              <i class="fa-brands fa-twitter"></i>
+              Compartir en twitter
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <p class="copy">Awesome profile-cards &copy;2018</p>
+      <a
+        href="https://github.com/Adalab/project-promo-s-module-2-team-2.git"
+        target="_blank"
+        ><img
+          class="adalab_logo"
+          src="./assets/images/logoPPD.png"
+          alt="logo"
+          title="Awesome cards logo"
+      /></a>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+.fill {
+  border-bottom: solid 1px $white-three;
+  padding-bottom: 10px;
+  &__title {
+    font: $openSans_18;
+    color: $gunmetal;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__header {
+    width: 100%;
+    cursor: pointer;
+  }
+  &__label {
+    margin-top: 15px;
+    font: $openSans_14;
+    line-height: 20px;
+    color: $dark-green-blue;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 7px;
+    &--button {
+      background-color: $dull-orange;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 30px;
+      width: 50%;
+      color: $white-two;
+      font: $openSans_14;
+      border-radius: 3px;
+      box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+      cursor: pointer;
+    }
+    &--box {
+      width: 30px;
+      height: 30px;
+      border: solid 1px $hospital-green;
+      margin-left: 10%;
+      background-size: 100%;
+      background-position: center;
+      object-fit: contain;
+    }
+    &--container {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+  &__input {
+    border: solid 1px $hospital-green;
+    width: 100%;
+    height: 30px;
+
+    &--last {
+      margin-bottom: 20px;
+    }
+  }
+}

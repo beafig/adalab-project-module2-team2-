@@ -1,0 +1,157 @@
+.background {
+  height: 457px;
+  background-image: linear-gradient(to bottom, $silver, $pale-grey 80%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media all and (min-width: 768px) {
+    width: 45%;
+    min-height: 440px;
+    height: auto;
+  }
+  @media all and (min-width: 1024px) {
+    width: 62%;
+    min-height: 70vh;
+  }
+}
+
+.reset__button {
+  transform: translateX(-110%);
+  width: 75px;
+  height: 30px;
+  border: solid 1px $white-two;
+  border-radius: 15px;
+  background-color: transparent;
+  margin-bottom: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  color: $gunmetal;
+  text-transform: uppercase;
+}
+
+.card {
+  background-color: $white-two;
+  width: 240px;
+  height: 329px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 5px 5px $black-20;
+
+  &__info {
+    width: 240px;
+    height: 44px;
+    margin-bottom: 10px;
+    border-left: solid 5px $dirty-blue;
+    padding-left: 15px;
+
+    &--title {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 20px;
+      margin-bottom: 4px;
+      color: $dark-green-blue;
+    }
+
+    &--subtitle {
+      font-family: "Montserrat", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+      color: $gunmetal;
+    }
+  }
+
+  &__image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: url("../images/profile-pic.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.socials {
+  margin-top: 8px;
+  margin-right: -65px;
+  display: flex;
+  list-style-type: none;
+  padding-right: 10px;
+  border-right: solid 5px $dirty-blue;
+
+  &__mobile,
+  &__mail,
+  &__linkedin,
+  &__github {
+    display: block;
+
+    padding-top: 6px;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    border: solid 2px $hospital-green;
+    text-align: center;
+    margin: 4px;
+    text-decoration: none;
+    color: $dark-green-blue;
+    cursor: pointer;
+  }
+
+  &__disabled {
+    pointer-events: none;
+    cursor: default;
+  }
+}
+
+/*-----------------PALETTE2--------------------*/
+
+.background.palette2 {
+  background-image: linear-gradient(to bottom, #f4bba9, #f2dad2 80%);
+}
+
+.card__info.palette2 {
+  border-left: solid 5px $rusty-red;
+  .card__info--title {
+    color: $dried-blood;
+  }
+}
+
+.socials.palette2 {
+  border-right: solid 5px $rusty-red;
+  .socials__mobile,
+  .socials__mail,
+  .socials__linkedin,
+  .socials__github {
+    border: solid 2px $tomato;
+    color: $dried-blood;
+  }
+}
+/*-----------------PALETTE3--------------------*/
+
+.background.palette3 {
+  background-image: linear-gradient(to bottom, #edcf9f, #e7d9c2 80%);
+}
+
+.card__info.palette3 {
+  border-left: solid 5px $faded-orange;
+  .card__info--title {
+    color: $slate;
+  }
+}
+
+.socials.palette3 {
+  border-right: solid 5px $faded-orange;
+  .socials__mobile,
+  .socials__mail,
+  .socials__linkedin,
+  .socials__github {
+    border: solid 2px $light-grey-blue;
+    color: $slate;
+  }
+}

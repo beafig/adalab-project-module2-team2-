@@ -1,0 +1,19 @@
+.section__form {
+  padding: 27px 20px 30px 20px;
+  background-image: linear-gradient(to bottom, $white-four, $white-two 80%);
+  @media all and (min-width: 768px) {
+    padding: 7px 0 0 0;
+    width: 55%;
+  }
+  @media all and (min-width: 1024px) {
+    width: 38%;
+  }
+}
+.fa-object-ungroup,
+.fa-share-nodes,
+.fa-keyboard {
+  color: $dull-orange;
+  width: 21px;
+  height: 18px;
+  margin-right: 10px;
+}

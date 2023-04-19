@@ -1,0 +1,15 @@
+.collapsable {
+  display: none;
+}
+
+@media all and (min-width: 768px) {
+  .create__main {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 30px;
+    background-image: linear-gradient(to bottom, $white-four, $white-two 80%);
+    padding: 20px 40px;
+    min-height: 65vh;
+  }
+}
