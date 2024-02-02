@@ -6,7 +6,7 @@ Para este segundo módulo del bootcamp de programación web de Adalab, el objeti
 
 - Uso avanzado de formularios HTML.
 - Maquetación CSS/SASS avanzado usando flexbox y grid, y haciendo uso de mediaqueries para que el diseño sea responsive.
-- Aprender los conceptos básicos de programación (variables, estructuras de datos, condicionales, funciones...)
+- Aprender los conceptos básicos de programación (variables, estructuras de datos, condicionales, funciones...).
 - Comprender como manipular el DOM de una página y responder a eventos del usuario.
 - Manejar estructuras de datos complejas, con arrays y objetos.
 - Realizar peticiones al servidor y almacenar datos en local.
